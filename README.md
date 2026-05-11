@@ -6,9 +6,8 @@
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=database&logoColor=white)
 
 A 100% offline, privacy-first Retrieval-Augmented Generation (RAG) desktop application. Archimedes allows users to query complex technical documents using natural language without sending sensitive proprietary data to the cloud. Designed with a custom "Industrial Noir" UI and engineered for Edge AI hardware.
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/860da1df-4c48-4a77-8138-c71bede8fbe5" />
 
-*(Insert your dark-mode UI screenshot here)*
-![Archimedes UI](link_to_your_screenshot_image.png)
 
 ## 🧠 System Architecture
 
