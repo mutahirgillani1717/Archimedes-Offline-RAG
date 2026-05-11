@@ -1,0 +1,15 @@
+# --- Python & Environments ---
+__pycache__/
+.venv/
+env/
+.vscode/
+
+# --- Database & LLM Assets ---
+# Never upload the local database folder
+db/
+# If you have PDF files for testing, ignore them or keep one sample
+*.pdf
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
