@@ -1,3 +1,4 @@
+
 # ΛRCHIMEDES // Offline Document Intelligence
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -6,8 +7,8 @@
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=database&logoColor=white)
 
 A 100% offline, privacy-first Retrieval-Augmented Generation (RAG) desktop application. Archimedes allows users to query complex technical documents using natural language without sending sensitive proprietary data to the cloud. Designed with a custom "Industrial Noir" UI and engineered for Edge AI hardware.
-<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/860da1df-4c48-4a77-8138-c71bede8fbe5" />
 
+<img width="960" height="504" alt="image" src="https://github.com/user-attachments/assets/913e4f3b-bf43-4522-8d54-9b5fd4ee5d17" />
 
 ## 🧠 System Architecture
 
@@ -30,3 +31,48 @@ Ensure you have Python 3.9+ installed and [Ollama](https://ollama.com/) running 
 Pull the local LLM brain:
 ```bash
 ollama run llama3.2:3b
+
+```
+
+### 2. Install Dependencies
+
+Clone this repository and install the required LangChain and UI libraries:
+
+```bash
+git clone [https://github.com/mutahirgillani1717/Archimedes-Offline-RAG.git](https://github.com/mutahirgillani1717/Archimedes-Offline-RAG.git)
+cd Archimedes-Offline-RAG
+pip install customtkinter langchain langchain-chroma langchain-huggingface chromadb pillow
+
+```
+
+### 3. Ingest Your Knowledge Base
+
+Place your target `.pdf` document in the root directory (update `ingest_data.py` with your filename if it differs). Build the local vector database:
+
+```bash
+python ingest_data.py
+
+```
+
+### 4. Launch the HUD
+
+Start the local server and interact with your data:
+
+```bash
+python archimedes_gui.py
+
+```
+
+## 🚀 Future Roadmap
+
+* [ ] Multi-document ingestion pipeline.
+* [ ] Source citation generation (showing which PDF page the answer came from).
+* [ ] Conversation memory buffer for follow-up questions.
+
+---
+
+**Author:** Syed Mutahir Hussain Gillani
+
+**License:** MIT
+
+```
